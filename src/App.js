@@ -10,9 +10,7 @@ function App() {
   const [query, setQuery] = useState("");
   const [city, setCity] = useState({});
 
-  // console.log(query);
-
-  //call api for city when serach updated
+  //call api for city when query updated
   useEffect(() => {
     const searchCity = () => {
       fetch(`${api.base}weather?q=${query}&units=metric&appid=${api.key}`)
@@ -27,9 +25,7 @@ function App() {
     searchCity();
   }, [query]);
 
-  console.log(city);
   let date = String(new window.Date());
-  // console.log(date);
 
   return (
     <div className="main">
