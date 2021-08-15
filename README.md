@@ -1,4 +1,4 @@
-Here is the link for ths project
+Here is the link for this project
 https://weather-demo-project.netlify.app/
 
 
